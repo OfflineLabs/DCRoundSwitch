@@ -399,7 +399,7 @@
 			if (previousOn != on && !ignoreControlEvents)
 				[self sendActionsForControlEvents:UIControlEventValueChanged];
 
-			[[self allTargets] makeObjectsPerformSelector:@selector(release)];
+			//[[self allTargets] makeObjectsPerformSelector:@selector(release)];
 		}];
 
 		[CATransaction commit];
